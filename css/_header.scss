@@ -1,22 +1,39 @@
+
 .container {
-    
     color:rgb(243, 243, 243);
-    margin: 5.5rem 1.5rem;
-    background:$Darkdesaturatedblue;
-    border-radius:10px;
-   
+    margin:auto;
+    display:flex;
+    width:328px;
+    height:900px;
+    justify-content: center;
+    align-items: center;
 
     @include breakpoint-up(large){
-        margin:10.9375rem 10.3125rem;;
+        width:1110px;
+        height:27.8125rem;
+        margin:auto;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+       
     }
    
 }
 
 .content{
+    margin:auto;
+    width:328px;
+    height:790px;
+    background:$Darkdesaturatedblue;
+    border-radius:10px;
+
     @include breakpoint-up(large){
+        width:1110px;
         display:flex;
         height:27.8125rem;
         justify-content: left;
+      
         
     }
 }
@@ -53,7 +70,7 @@ img{
 
 article{
    
-    padding: 1.40625rem 2.125rem 2.5rem 2.125rem;
+    padding: 0.9rem 2.125rem 0.5rem 2.125rem;
     letter-spacing:1px;
     text-align:center;
 
